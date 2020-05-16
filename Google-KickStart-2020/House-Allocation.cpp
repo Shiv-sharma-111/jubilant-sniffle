@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL); cout.tie(NULL);
+  int T;
+  cin>>T;
+  int k=0;
+  while(T--)
+  {
+    k++;
+    int n, total;
+    cin>>n>>total;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+      cin>>arr[i];
+    }
+    sort(arr,arr+n);
+    int sum=0,count=0;
+    for(int i=0;i<n;i++)
+    {
+      sum+=arr[i];
+      if(sum<=total)
+      {
+        count++;
+      }
+      else
+      {
+        break;
+      }
+    }
+    cout<<"Case #"<<k<<": "<<count<<endl;
+  }
+  return 0;
+}
+//Case #1: 2
+//Case #2: 3
+//Case #3: 0
+// 4 50
+// 10 10 30 50
