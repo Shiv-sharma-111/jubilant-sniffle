@@ -122,5 +122,5 @@ int main()
 //Time Complexity
 //build function O(n);
 //query function O(log(n));
-// updateNode O(n)  worst cases
-// updateRange O(n)
+// updateNode O(log(n))  worst cases
+// updateRange O(n*log(n));
